@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+    --box-shadow-inset:inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+    --bg-color: #dde1e7
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: rgb(113, 112, 112);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 90px 1fr;
+    grid-template-columns: 280px 3fr;
+    grid-template-areas: "nav header" "nav main";
+    gap: 10px;
+}
+.nav-panel {
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 5px;
+
+}
+.header {
+    grid-area: header;
+    width: 100%;
+    height: 100%;
+    background-color:var(--bg-color);
+    padding: 20px;
+    border-radius: 5px;
+}
+.main {
+    grid-area: main;
+    background-color: var(--bg-color);
+    padding: 20px;
+    border-radius: 5px;
+}
+.main-wrapper {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    gap: 16px;
+    grid-template-rows: 1fr 1fr 2fr .5fr 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: 'title title'
+    'total-info transaction'
+    'wallet transaction'
+    'wallet transfer'
+    'statistic transfer'
+    'statistic transfer';
+}
+.title {
+    grid-area: title;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--bg-color);
+    box-shadow:  var(--box-shadow)
+}
+.total-info {
+    grid-area: total-info;
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--bg-color);
+    box-shadow: var(--box-shadow)
+}
+.wallet {
+    grid-area: wallet;
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--bg-color);
+    box-shadow:  var(--box-shadow)
+}
+.statistic {
+    grid-area: statistic;
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--bg-color);
+    box-shadow:  var(--box-shadow)
+}
+.transaction {
+    grid-area: transaction;
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--bg-color);
+    box-shadow:  var(--box-shadow)
+}
+.transfer {
+    grid-area: transfer;
+    border-radius: 5px;
+    padding: 10px;
+    background: var(--bg-color);
+    box-shadow:  var(--box-shadow)
+}
+
+.element:hover {
+    box-shadow: var(--box-shadow-inset);
+    transition-duration: 0.4s;
+}
