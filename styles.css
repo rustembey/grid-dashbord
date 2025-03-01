@@ -111,3 +111,97 @@ body {
     box-shadow: var(--box-shadow-inset);
     transition-duration: 0.4s;
 }
+
+/* Sidebar menu */
+.nav-panel__menu {
+    margin-top: 20px;
+}
+
+.nav-panel__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 18px;
+    list-style: none;
+    min-height: 70vh;
+    padding: 0;
+}
+
+.nav-panel__item {
+    margin-bottom: 10px;
+}
+
+.nav-panel__link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+.nav-panel__link:hover {
+    box-shadow: var(--box-shadow-inset);
+}
+
+/* Header logo */
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 90px;
+}
+
+/* Existing styles */
+
+/* Cards */
+.card {
+    padding: 16px;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: var(--box-shadow-inset);
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__title {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card__value {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Unique Card Types */
+.card_type_total {
+    grid-area: total-info;
+}
+
+.card_type_wallet {
+    grid-area: wallet;
+}
+
+.card_type_statistic {
+    grid-area: statistic;
+}
+
+.card_type_transaction {
+    grid-area: transaction;
+}
+
+.card_type_transfer {
+    grid-area: transfer;
+}
+

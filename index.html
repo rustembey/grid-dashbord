@@ -9,30 +9,73 @@
 <body>
     <div class="container">
         <aside class="nav-panel">
-            <h2>Navigation</h2>
+            <nav class="nav-panel__menu">
+                <ul class="nav-panel__list">
+                    <li class="nav-panel__item"><a href="#" class="nav-panel__link">Home</a></li>
+                    <li class="nav-panel__item"><a href="#" class="nav-panel__link">Dashboard</a></li>
+                    <li class="nav-panel__item"><a href="#" class="nav-panel__link">Transactions</a></li>
+                    <li class="nav-panel__item"><a href="#" class="nav-panel__link">Settings</a></li>
+                    <li class="nav-panel__item"><a href="#" class="nav-panel__link">Profile</a></li>
+                </ul>
+            </nav>
         </aside>
         <header class="header">
-            <h2>Header</h2>
+            <div class="header__logo">MyApp</div>
         </header>
         <main class="main">
             <div class="main-wrapper">
                 <section class="title element">
                     <h4>Dashboard</h4>
                 </section>
+                
+                <!-- Total Info Section -->
                 <section class="total-info element">
-                    <h4>Total</h4>
+                    <article class="card card_type_total">
+                        <div class="card__content">
+                            <h5 class="card__title">Total Balance</h5>
+                            <p class="card__value">$1234.56</p>
+                        </div>
+                    </article>
                 </section>
+
+                <!-- Wallet Section -->
                 <section class="wallet element">
-                    <h4>Wallet</h4>
+                    <article class="card card_type_wallet">
+                        <div class="card__content">
+                            <h5 class="card__title">Wallet Balance</h5>
+                            <p class="card__value">$999.99</p>
+                        </div>
+                    </article>
                 </section>
+
+                <!-- Statistic Section -->
                 <section class="statistic element">
-                    <h4>Statistic</h4>
+                    <article class="card card_type_statistic">
+                        <div class="card__content">
+                            <h5 class="card__title">Today's Stats</h5>
+                            <p class="card__value">+23%</p>
+                        </div>
+                    </article>
                 </section>
+
+                <!-- Transaction Section -->
                 <section class="transaction element">
-                    <h4>Transaction</h4>
+                    <article class="card card_type_transaction">
+                        <div class="card__content">
+                            <h5 class="card__title">Last Transaction</h5>
+                            <p class="card__value">$99.99</p>
+                        </div>
+                    </article>
                 </section>
+
+                <!-- Transfer Section -->
                 <section class="transfer element">
-                    <h4>Transfer</h4>
+                    <article class="card card_type_transfer">
+                        <div class="card__content">
+                            <h5 class="card__title">Last Transfer</h5>
+                            <p class="card__value">$500.00</p>
+                        </div>
+                    </article>
                 </section>
             </div>
         </main>
