@@ -4,36 +4,225 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Grid-Dash</title>
 </head>
 <body>
     <div class="container">
         <aside class="nav-panel">
-            <h3>Navigation</h3>
+            <nav class="nav-panel__menu">
+                <div class="nav-panel__logo">MyApp</div>
+                <ul class="nav-panel__list">
+                    <li class="nav-panel__item"><a href="#" class="nav-panel__link">
+                        <span class="nav-panel__icon">
+                            <svg class="nav-panel__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 9C13.7167 9 13.4793 8.904 13.288 8.712C13.0967 8.52 13.0007 8.28267 13 8V4C13 3.71667 13.096 3.47933 13.288 3.288C13.48 3.09667 13.7173 3.00067 14 3H20C20.2833 3 20.521 3.096 20.713 3.288C20.905 3.48 21.0007 3.71733 21 4V8C21 8.28333 20.904 8.521 20.712 8.713C20.52 8.905 20.2827 9.00067 20 9H14ZM4 13C3.71667 13 3.47933 12.904 3.288 12.712C3.09667 12.52 3.00067 12.2827 3 12V4C3 3.71667 3.096 3.47933 3.288 3.288C3.48 3.09667 3.71733 3.00067 4 3H10C10.2833 3 10.521 3.096 10.713 3.288C10.905 3.48 11.0007 3.71733 11 4V12C11 12.2833 10.904 12.521 10.712 12.713C10.52 12.905 10.2827 13.0007 10 13H4ZM14 21C13.7167 21 13.4793 20.904 13.288 20.712C13.0967 20.52 13.0007 20.2827 13 20V12C13 11.7167 13.096 11.4793 13.288 11.288C13.48 11.0967 13.7173 11.0007 14 11H20C20.2833 11 20.521 11.096 20.713 11.288C20.905 11.48 21.0007 11.7173 21 12V20C21 20.2833 20.904 20.521 20.712 20.713C20.52 20.905 20.2827 21.0007 20 21H14ZM4 21C3.71667 21 3.47933 20.904 3.288 20.712C3.09667 20.52 3.00067 20.2827 3 20V16C3 15.7167 3.096 15.4793 3.288 15.288C3.48 15.0967 3.71733 15.0007 4 15H10C10.2833 15 10.521 15.096 10.713 15.288C10.905 15.48 11.0007 15.7173 11 16V20C11 20.2833 10.904 20.521 10.712 20.713C10.52 20.905 10.2827 21.0007 10 21H4Z" />
+                                </svg></span>                          
+                        <span class="nav-panel__text"> Overview</span></a></li>
+                    <li class="nav-panel__item"><a href="#" class="nav-panel__link">
+                        <span class="nav-panel__icon">
+                            <svg class="nav-panel__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.0001 2C10.1435 2 8.36306 2.7375 7.0503 4.05025C5.73755 5.36301 5.00005 7.14348 5.00005 9V12.528C5.0002 12.6831 4.96425 12.8362 4.89505 12.975L3.17805 16.408C3.09418 16.5757 3.05457 16.7621 3.063 16.9494C3.07143 17.1368 3.1276 17.3188 3.2262 17.4783C3.32479 17.6379 3.46252 17.7695 3.62632 17.8608C3.79011 17.9521 3.97453 18 4.16205 18H19.8381C20.0256 18 20.21 17.9521 20.3738 17.8608C20.5376 17.7695 20.6753 17.6379 20.7739 17.4783C20.8725 17.3188 20.9287 17.1368 20.9371 16.9494C20.9455 16.7621 20.9059 16.5757 20.8221 16.408L19.1061 12.975C19.0365 12.8362 19.0002 12.6832 19.0001 12.528V9C19.0001 7.14348 18.2626 5.36301 16.9498 4.05025C15.637 2.7375 13.8566 2 12.0001 2ZM12.0001 21C11.3794 21.0003 10.7739 20.8081 10.2671 20.4499C9.76022 20.0917 9.37694 19.5852 9.17005 19H14.8301C14.6232 19.5852 14.2399 20.0917 13.733 20.4499C13.2262 20.8081 12.6207 21.0003 12.0001 21Z"
+                                />
+                                </svg></span>
+                        <span class="nav-panel__text">Notifications</span></a></li>
+                    <li class="nav-panel__item"><a href="#" class="nav-panel__link">
+                        <span class="nav-panel__icon" >
+                            <svg class="nav-panel__icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.999 9.002C16.2837 9.03392 15.6065 9.33294 15.101 9.84L10.271 14.669C9.862 15.079 9.571 15.592 9.431 16.154L9.22 16.999H5.5C4.83696 16.999 4.20107 16.7356 3.73223 16.2668C3.26339 15.7979 3 15.162 3 14.499V6.999H16.999V9.002ZM7 11C7.26522 11 7.51957 10.8946 7.70711 10.7071C7.89464 10.5196 8 10.2652 8 10C8 9.73478 7.89464 9.48043 7.70711 9.29289C7.51957 9.10536 7.26522 9 7 9C6.73478 9 6.48043 9.10536 6.29289 9.29289C6.10536 9.48043 6 9.73478 6 10C6 10.2652 6.10536 10.5196 6.29289 10.7071C6.48043 10.8946 6.73478 11 7 11ZM6 13C6 13.2652 6.10536 13.5196 6.29289 13.7071C6.48043 13.8946 6.73478 14 7 14C7.26522 14 7.51957 13.8946 7.70711 13.7071C7.89464 13.5196 8 13.2652 8 13C8 12.7348 7.89464 12.4804 7.70711 12.2929C7.51957 12.1054 7.26522 12 7 12C6.73478 12 6.48043 12.1054 6.29289 12.2929C6.10536 12.4804 6 12.7348 6 13ZM10 11C10.2652 11 10.5196 10.8946 10.7071 10.7071C10.8946 10.5196 11 10.2652 11 10C11 9.73478 10.8946 9.48043 10.7071 9.29289C10.5196 9.10536 10.2652 9 10 9C9.73478 9 9.48043 9.10536 9.29289 9.29289C9.10536 9.48043 9 9.73478 9 10C9 10.2652 9.10536 10.5196 9.29289 10.7071C9.48043 10.8946 9.73478 11 10 11ZM9 13C9 13.2652 9.10536 13.5196 9.29289 13.7071C9.48043 13.8946 9.73478 14 10 14C10.2652 14 10.5196 13.8946 10.7071 13.7071C10.8946 13.5196 11 13.2652 11 13C11 12.7348 10.8946 12.4804 10.7071 12.2929C10.5196 12.1054 10.2652 12 10 12C9.73478 12 9.48043 12.1054 9.29289 12.2929C9.10536 12.4804 9 12.7348 9 13ZM13 11C13.2652 11 13.5196 10.8946 13.7071 10.7071C13.8946 10.5196 14 10.2652 14 10C14 9.73478 13.8946 9.48043 13.7071 9.29289C13.5196 9.10536 13.2652 9 13 9C12.7348 9 12.4804 9.10536 12.2929 9.29289C12.1054 9.48043 12 9.73478 12 10C12 10.2652 12.1054 10.5196 12.2929 10.7071C12.4804 10.8946 12.7348 11 13 11ZM16.999 5.5C16.999 4.83696 16.7356 4.20107 16.2668 3.73223C15.7979 3.26339 15.162 3 14.499 3H5.499C4.83613 3.00027 4.2005 3.26377 3.73188 3.73259C3.26325 4.2014 3 4.83713 3 5.5V6H16.999V5.5ZM15.808 10.547L10.978 15.376C10.697 15.6576 10.4976 16.0101 10.401 16.396L10.027 17.894C9.98988 18.043 9.99192 18.199 10.0329 18.3469C10.0739 18.4948 10.1525 18.6297 10.261 18.7382C10.3695 18.8468 10.5042 18.9255 10.6521 18.9667C10.8 19.0078 10.956 19.01 11.105 18.973L12.603 18.598C12.989 18.5011 13.3415 18.3014 13.623 18.02L18.453 13.192C18.6267 13.0183 18.7644 12.8121 18.8584 12.5852C18.9524 12.3583 19.0008 12.1151 19.0008 11.8695C19.0008 11.6239 18.9524 11.3807 18.8584 11.1538C18.7644 10.9269 18.6267 10.7207 18.453 10.547C18.2793 10.3733 18.0731 10.2356 17.8462 10.1416C17.6193 10.0476 17.3761 9.9992 17.1305 9.9992C16.8849 9.9992 16.6417 10.0476 16.4148 10.1416C16.1879 10.2356 15.9817 10.3733 15.808 10.547Z"/>
+                                </svg></span>                        
+                        <span class="nav-panel__text">Calendar</span> </a></li>
+                    <li class="nav-panel__item"><a href="#" class="nav-panel__link">
+                        <span class="nav-panel__icon">
+                            <svg class="nav-panel__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2ZM12 6C11.7348 6 11.4804 6.10536 11.2929 6.29289C11.1054 6.48043 11 6.73478 11 7V12C11.0001 12.2652 11.1055 12.5195 11.293 12.707L14.293 15.707C14.4816 15.8892 14.7342 15.99 14.9964 15.9877C15.2586 15.9854 15.5094 15.8802 15.6948 15.6948C15.8802 15.5094 15.9854 15.2586 15.9877 14.9964C15.99 14.7342 15.8892 14.4816 15.707 14.293L13 11.586V7C13 6.73478 12.8946 6.48043 12.7071 6.29289C12.5196 6.10536 12.2652 6 12 6Z"/>
+                                </svg></span>
+                        <span class="nav-panel__text">Alarm</span></a></li>
+                    <li class="nav-panel__item"><a href="#" class="nav-panel__link">
+                       <span class="nav-panel__icon">
+                        <svg class="nav-panel__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.24995 22L8.84995 18.8C8.63329 18.7167 8.42928 18.6167 8.23795 18.5C8.04662 18.3833 7.85895 18.2583 7.67495 18.125L4.69995 19.375L1.94995 14.625L4.52495 12.675C4.50828 12.5583 4.49995 12.446 4.49995 12.338V11.663C4.49995 11.5543 4.50828 11.4417 4.52495 11.325L1.94995 9.375L4.69995 4.625L7.67495 5.875C7.85828 5.74167 8.04995 5.61667 8.24995 5.5C8.44995 5.38333 8.64995 5.28333 8.84995 5.2L9.24995 2H14.75L15.15 5.2C15.3666 5.28333 15.571 5.38333 15.763 5.5C15.955 5.61667 16.1423 5.74167 16.325 5.875L19.2999 4.625L22.0499 9.375L19.475 11.325C19.4916 11.4417 19.5 11.5543 19.5 11.663V12.337C19.5 12.4457 19.4833 12.5583 19.45 12.675L22.025 14.625L19.275 19.375L16.325 18.125C16.1416 18.2583 15.95 18.3833 15.75 18.5C15.55 18.6167 15.35 18.7167 15.15 18.8L14.75 22H9.24995ZM12.05 15.5C13.0166 15.5 13.8416 15.1583 14.525 14.475C15.2083 13.7917 15.55 12.9667 15.55 12C15.55 11.0333 15.2083 10.2083 14.525 9.525C13.8416 8.84167 13.0166 8.5 12.05 8.5C11.0666 8.5 10.2373 8.84167 9.56195 9.525C8.88662 10.2083 8.54928 11.0333 8.54995 12C8.55062 12.9667 8.88828 13.7917 9.56295 14.475C10.2376 15.1583 11.0666 15.5 12.05 15.5Z"/>
+                            </svg></span> 
+                        <span class="nav-panel__text">Settings</span></a></li>
+                </ul>
+            </nav>
         </aside>
         <header class="header">
-            <h2>Header</h2>
+            <div class="header__title">
+                <h1 class="header__heading">Overview</h1>
+                <p class="header__subheading">Welcome to your dashboard</p>
+            </div>
+            <div class="header__content">
+                <div class="header__content-date">
+                    <label for="current-date" hidden> 12 March 2025</label>
+                        <input
+                        type="date"
+                        id="current-date"
+                        name="current-date"
+                        value="2025-03-12" />
+                </div>
+                <div class="header__content-user">
+                    <div class="header__userinfo">
+                        <p>Your Profile</p>
+                    <h4 class="header__user-name">Jennifer Carpenter</h4>
+                    </div>
+                    <img src="./images/avatar.png" alt="User Avatar" class="header__avatar" />
+                </div>
+            </div>
         </header>
         <main class="main">
             <div class="main-wrapper">
-                <section class="title element">
-                    <h4>Dashboard</h4>
+                <!-- Total Info Section -->
+                <section class="total-sleep element">
+                    <article class="card card-total">
+                        <div class="card-total__content">
+                            <h5 class="card-total__title">sleep time</h5>
+                            <p class="card-total__description">you sleep 32 min longer than last night.</p>
+                            <div class="card-total__value card-value">
+                                <div class="card-time"><span> <time datetime="08:32">8hr 32min</time></span></div>
+                            </div>
+                        </div>
+                        <div class="card__illusstration">
+                            <img src="./images/1.svg" alt="Sleep Illustration"
+                            width="99" height="104" loading="lazy" />
+                        </div>
+                    </article>
                 </section>
-                <section class="total-info element">
-                    <h4>Total</h4>
+
+                <!-- Sleep-time Section -->
+                <section class="sleep-time element">
+                    <article class="card-sleep-time">
+                        <div class="card-sleep-time__illusstration">
+                            <img src="./images/2.svg" alt="Sleep Illustration"
+                            width="40" height="40" loading="lazy" />
+                        </div>
+                        <div class="card-sleep-time__content">
+                            <h5 class="card-sleep-time__title">Falling sleep</h5>
+                            <div class="card-sleep-time__value">
+                                <div class="card-time"><span> <time datetime="11:00">11:00 AM</time></span></div>
+                            </div>
+                        </div>
+                        
+                    </article>
                 </section>
-                <section class="wallet element">
-                    <h4>Wallet</h4>
+
+                <!-- Sleep-time Section -->
+                <section class="wake-up element">
+                    <article class="card-wake-up">
+                        <div class="card-wake-up__illusstration">
+                            <img src="./images/3.svg" alt="Sleep Illustration"
+                            width="40" height="40" loading="lazy" />
+                        </div>
+                        <div class="wake-up__content">
+                            <h5 class="wake-up__title">Wake up</h5>
+                            <div class="wake-up__value">
+                                <div class="card-time"><span> <time datetime="11:00">11:00 AM</time></span></div>
+                            </div>
+                        </div>
+                        
+                    </article>
                 </section>
-                <section class="statistic element">
-                    <h4>Statistic</h4>
+                <!-- Stages Section -->
+                <section class="stages">
+                    <header class="stages-header">
+                        <h5>Sleep Stages</h5>
+                        <div class="stages-header__description">
+                            <span><time datetime="06:48">06:48 AM</time></span>
+                            <a href="/">
+                                <svg width="227" height="6" viewBox="0 0 227 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.866667 3C0.866667 4.17821 1.82179 5.13333 3 5.13333C4.17821 5.13333 5.13333 4.17821 5.13333 3C5.13333 1.82179 4.17821 0.866667 3 0.866667C1.82179 0.866667 0.866667 1.82179 0.866667 3ZM227 3L223 0.690599V5.3094L227 3ZM3 3.4H5V2.6H3V3.4ZM9 3.4H13V2.6H9V3.4ZM17 3.4H21V2.6H17V3.4ZM25 3.4H29V2.6H25V3.4ZM33 3.4H37V2.6H33V3.4ZM41 3.4H45V2.6H41V3.4ZM49 3.4H53V2.6H49V3.4ZM57 3.4H61V2.6H57V3.4ZM65 3.4H69V2.6H65V3.4ZM73 3.4H77V2.6H73V3.4ZM81 3.4H85V2.6H81V3.4ZM89 3.4H93V2.6H89V3.4ZM97 3.4H101V2.6H97V3.4ZM105 3.4H109V2.6H105V3.4ZM113 3.4H117V2.6H113V3.4ZM121 3.4H125V2.6H121V3.4ZM129 3.4H133V2.6H129V3.4ZM137 3.4H141V2.6H137V3.4ZM145 3.4H149V2.6H145V3.4ZM153 3.4H157V2.6H153V3.4ZM161 3.4H165V2.6H161V3.4ZM169 3.4H173V2.6H169V3.4ZM177 3.4H181V2.6H177V3.4ZM185 3.4H189V2.6H185V3.4ZM193 3.4H197V2.6H193V3.4ZM201 3.4H205V2.6H201V3.4ZM209 3.4H213V2.6H209V3.4ZM217 3.4H221V2.6H217V3.4Z"/>
+                                    </svg>                                    
+                            </a>
+                            <span><time datetime="11:00">11:00 AM</time></span>
+                        </div>
+                    </header>
+                    <div class="sleep-tracker">
+                        <!-- Left Section: Progress Grid -->
+                        <div class="progress-grid">
+                          <!-- Awake Card -->
+                          <div class="progress-card">
+                            <h3>Awake</h3>
+                            <div class="progress-container">
+                              <svg class="progress-ring" width="60" height="60" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#D5DADF" stroke-width="10"/>
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#ff69b4" stroke-width="10" stroke-dasharray="11.31 271.43" transform="rotate(-90 50 50)"/>
+                              </svg>
+                              <div class="percentage">4%</div>
+                            </div>
+                          </div>
+                          <!-- Rem Card -->
+                          <div class="progress-card">
+                            <h3>Rem</h3>
+                            <div class="progress-container">
+                              <svg class="progress-ring" width="60" height="60" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#D5DADF" stroke-width="10"/>
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="teal" stroke-width="10" stroke-dasharray="70.69 212.06" transform="rotate(-90 50 50)"/>
+                              </svg>
+                              <div class="percentage">25%</div>
+                            </div>
+                          </div>
+                          <!-- Core Card -->
+                          <div class="progress-card">
+                            <h3>Core</h3>
+                            <div class="progress-container">
+                              <svg class="progress-ring" width="60" height="60" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#D5DADF" stroke-width="10"/>
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="blue" stroke-width="10" stroke-dasharray="152.68 130.06" transform="rotate(-90 50 50)"/>
+                              </svg>
+                              <div class="percentage">54%</div>
+                            </div>
+                          </div>
+                          <!-- Deep Card -->
+                          <div class="progress-card">
+                            <h3>Deep</h3>
+                            <div class="progress-container">
+                              <svg class="progress-ring" width="60" height="60" viewBox="0 0 100 100">
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="#D5DADF" stroke-width="10"/>
+                                <circle cx="50" cy="50" r="45" fill="none" stroke="green" stroke-width="10" stroke-dasharray="48.07 234.67" transform="rotate(-90 50 50)"/>
+                              </svg>
+                              <div class="percentage">17%</div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Right Section: Bar Graph -->
+                        <div class="bar-graph">
+                          <div class="bar">
+                            <div class="bar-1"></div>
+                          </div>
+                          <div class="bar">
+                            <div class="bar-2"></div>
+                          </div>
+                          <div class="bar">
+                            <div class="bar-3"></div>
+                          </div>
+                          <div class="bar">
+                            <div class="bar-4"></div>
+                          </div>
+                          <div class="bar">
+                            <div class="bar-5"></div>
+                          </div>
+                          <div class="bar">
+                            <div class="bar-6"></div>
+                          </div>
+                          <div class="bar">
+                            <div class="bar-7"></div>
+                          </div>
+                          <div class="bar">
+                            <div class="bar-8"></div>
+                          </div>
+                        </div>
+                      </div>
                 </section>
-                <section class="transaction element">
-                    <h4>Transaction</h4>
-                </section>
-                <section class="transfer element">
-                    <h4>Transfer</h4>
-                </section>
+                <!-- Quality Section -->
+                <section class="quality"></section>
+                <!-- Tips Section -->
+                <section class="tips"></section>
+                <!-- Score Section -->
+                <section class="scores"></section>
+                <!-- Smart-alarm Section -->
+                <section class="smart-alarm"></section>
             </div>
         </main>
     </div>
